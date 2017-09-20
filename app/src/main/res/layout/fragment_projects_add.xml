@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fbutton="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:id="@+id/cnd_form"
+    android:paddingBottom="16dp"
+    android:paddingTop="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:gravity="center_horizontal">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:layout_marginTop="170px">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Projects"
+                android:id="@+id/textView4"
+                android:layout_gravity="center_horizontal"
+                android:textSize="70px"
+                android:layout_weight="2.70" />
+
+            <android.support.design.widget.TextInputLayout android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+
+                <com.github.florent37.materialtextfield.MaterialTextField
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    app:mtf_image="@drawable/ic_perm_identity_black_24dp"
+                    app:mtf_backgroundColor="@color/disabled_color"
+                    android:id="@+id/txtProjectid">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:id="@+id/txtPid"
+                        android:hint="Project ID"
+                        />
+
+                </com.github.florent37.materialtextfield.MaterialTextField>
+            </android.support.design.widget.TextInputLayout>
+
+
+
+
+            <android.support.design.widget.TextInputLayout android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+
+                <com.github.florent37.materialtextfield.MaterialTextField
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    app:mtf_image="@drawable/ic_perm_identity_black_24dp"
+                    app:mtf_backgroundColor="@color/disabled_color"
+                    android:id="@+id/txtTitle">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:id="@+id/txtTtl"
+                        android:hint="Project Title"
+                        />
+
+                </com.github.florent37.materialtextfield.MaterialTextField>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+
+                <com.github.florent37.materialtextfield.MaterialTextField
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    app:mtf_image="@drawable/ic_perm_identity_black_24dp"
+                    app:mtf_backgroundColor="@color/disabled_color"
+                    android:id="@+id/txtFunctionality">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:id="@+id/txtfnc"
+                        android:hint="Functionality"
+                        />
+
+                </com.github.florent37.materialtextfield.MaterialTextField>
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+
+                <com.github.florent37.materialtextfield.MaterialTextField
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    app:mtf_image="@drawable/ic_perm_identity_black_24dp"
+                    app:mtf_backgroundColor="@color/disabled_color"
+                    android:id="@+id/txtGrade">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:id="@+id/txtgrd"
+                        android:hint="Grade"
+                        />
+
+                </com.github.florent37.materialtextfield.MaterialTextField>
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+
+                <com.github.florent37.materialtextfield.MaterialTextField
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    app:mtf_image="@drawable/ic_perm_identity_black_24dp"
+                    app:mtf_backgroundColor="@color/disabled_color"
+                    android:id="@+id/Year">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:id="@+id/txtyr"
+                        android:hint="Year"
+                        />
+                </com.github.florent37.materialtextfield.MaterialTextField>
+            </android.support.design.widget.TextInputLayout>
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:id="@+id/submitprojectripple"
+                android:layout_width="300px"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="120px"
+                app:mrl_rippleOverlay="true"
+                android:layout_marginTop="20dp">
+
+                <info.hoang8f.widget.FButton
+                    fbutton:buttonColor="@color/fbutton_color_belize_hole"
+                    fbutton:shadowColor="@color/colorPrimary"
+                    fbutton:shadowEnabled="true"
+                    fbutton:shadowHeight="5dp"
+                    fbutton:cornerRadius="5dp"
+                    android:text="Next"
+                    android:textSize="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/btnproject"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"/>
+            </com.balysv.materialripple.MaterialRippleLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

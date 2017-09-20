@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fbutton="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:id="@+id/cnd_form"
+    android:paddingBottom="16dp"
+    android:paddingTop="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:gravity="center_horizontal">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:layout_marginTop="170px">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Placement"
+                android:id="@+id/textView4"
+                android:layout_gravity="center_horizontal"
+                android:textSize="70px"/>
+
+            <LinearLayout
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <android.support.design.widget.TextInputLayout android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+
+                <com.github.florent37.materialtextfield.MaterialTextField
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    app:mtf_image="@drawable/ic_perm_identity_black_24dp"
+                    app:mtf_backgroundColor="@color/disabled_color"
+                    android:id="@+id/txtbatchyear">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:id="@+id/txtBid"
+                        android:hint="Batch Year"
+                        />
+
+                </com.github.florent37.materialtextfield.MaterialTextField>
+            </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+            <fr.ganfra.materialspinner.MaterialSpinner
+                android:id="@+id/Candidates"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                app:ms_thickness="1.5dp"
+                app:ms_hint="Candidate ID"
+                app:ms_enableFloatingLabel="true"
+                app:ms_floatingLabelText="Candidate ID"
+                app:ms_baseColor="@color/colorPrimary">
+
+            </fr.ganfra.materialspinner.MaterialSpinner>
+        <android.support.design.widget.TextInputLayout android:layout_height="wrap_content"
+            android:layout_width="wrap_content">
+            <com.github.florent37.materialtextfield.MaterialTextField
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                app:mtf_image="@drawable/ic_perm_identity_black_24dp"
+                app:mtf_backgroundColor="@color/disabled_color"
+                android:id="@+id/txtcompid">
+          <android.support.v7.widget.AppCompatAutoCompleteTextView
+              android:id="@+id/cmpid"
+              android:layout_width="300dp"
+              android:layout_height="wrap_content"
+              android:hint="Company Name">
+              <requestFocus/>
+              </android.support.v7.widget.AppCompatAutoCompleteTextView>
+            </com.github.florent37.materialtextfield.MaterialTextField>
+        </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+
+                <com.github.florent37.materialtextfield.MaterialTextField
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    app:mtf_image="@drawable/ic_perm_identity_black_24dp"
+                    app:mtf_backgroundColor="@color/disabled_color"
+                    android:id="@+id/txtDesignation">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:id="@+id/txtdesig"
+                        android:hint="Designation"
+                        />
+
+                </com.github.florent37.materialtextfield.MaterialTextField>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+
+                <com.github.florent37.materialtextfield.MaterialTextField
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    app:mtf_image="@drawable/ic_perm_identity_black_24dp"
+                    app:mtf_backgroundColor="@color/disabled_color"
+                    android:id="@+id/txtSalarydetails">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:id="@+id/txtsal"
+                        android:hint="Salary Details"
+                        />
+
+                </com.github.florent37.materialtextfield.MaterialTextField>
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+
+                <com.github.florent37.materialtextfield.MaterialTextField
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    app:mtf_image="@drawable/ic_perm_identity_black_24dp"
+                    app:mtf_backgroundColor="@color/disabled_color"
+                    android:id="@+id/txtWorkprofile">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:id="@+id/txtwp"
+                        android:hint="Work Profile"
+                        />
+
+                </com.github.florent37.materialtextfield.MaterialTextField>
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+
+                <com.github.florent37.materialtextfield.MaterialTextField
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    app:mtf_image="@drawable/ic_perm_identity_black_24dp"
+                    app:mtf_backgroundColor="@color/disabled_color"
+                    android:id="@+id/txtDateOjoin">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:id="@+id/txtdoj"
+                        android:hint="Date Of Join"
+                        />
+                </com.github.florent37.materialtextfield.MaterialTextField>
+            </android.support.design.widget.TextInputLayout>
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:id="@+id/submitprojectripple"
+                android:layout_width="300px"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="120px"
+                app:mrl_rippleOverlay="true"
+                android:layout_marginTop="20dp">
+
+                <info.hoang8f.widget.FButton
+                    fbutton:buttonColor="@color/fbutton_color_belize_hole"
+                    fbutton:shadowColor="@color/colorPrimary"
+                    fbutton:shadowEnabled="true"
+                    fbutton:shadowHeight="5dp"
+                    fbutton:cornerRadius="5dp"
+                    android:text="Next"
+                    android:textSize="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/btnplacement"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"/>
+            </com.balysv.materialripple.MaterialRippleLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

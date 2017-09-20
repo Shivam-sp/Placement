@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/framadmincan">
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lingrid"
+        android:shrinkColumns="*"
+        android:stretchColumns="*">
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lingrid0">
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/candidateid"
+            android:layout_gravity="center"
+            android:textStyle="bold" />
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/firstname"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/middlename"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        />
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:orientation="vertical">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Verify"
+            android:id="@+id/btn"
+
+             />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="Delete"
+            android:id="@+id/btn1"
+
+            android:background="@color/fbutton_color_pomegranate"/>
+            </LinearLayout>
+        </TableRow>
+    </TableLayout>
+</FrameLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/lincanqa">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:shrinkColumns="*"
+        android:stretchColumns="*"
+        android:id="@+id/lintabq">
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lintabr">
+            <TextView
+                android:text="Degree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/qdgree"
+                android:layout_gravity="center|center_horizontal"
+                android:textStyle="bold"
+                android:textSize="20dp"/>
+            <TextView
+                android:text="Collage name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/qclgn"
+                android:layout_gravity="center|start"
+                android:layout_marginLeft="20dp"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                />
+
+            <TextView
+                android:text="Year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/qyp"
+                android:layout_gravity="center|start"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                />
+
+            <TextView
+                android:text="Grade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/qgrd"
+                android:layout_gravity="center|start"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                />
+        </TableRow>
+    </TableLayout>
+    <ScrollView
+        android:id="@+id/qcansrc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarAlwaysDrawHorizontalTrack="true"
+        android:fillViewport="true">
+        <ListView
+            android:id="@+id/listqualification"
+            android:divider="#000000"
+            android:dividerHeight="2dp"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:columnWidth="75dp"
+            android:stretchMode="columnWidth"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </ListView>
+    </ScrollView>
+</LinearLayout>

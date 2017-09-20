@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/linadmcan">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:shrinkColumns="*"
+        android:stretchColumns="*">
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lingrid0">
+            <TextView
+                android:text="Candidate ID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/candidateid"
+                android:layout_gravity="center|center_horizontal"
+                android:textStyle="bold" />
+            <TextView
+                android:text="Firstname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/firstname"
+                android:layout_gravity="center|start"
+                android:layout_marginLeft="20dp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:text="Middlename"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/verifybtns"
+                android:layout_gravity="center|start"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/middlename"
+                android:layout_gravity="center|start"
+                android:textStyle="bold"
+                />
+        </TableRow>
+    </TableLayout>
+    <ScrollView
+        android:id="@+id/admcansrc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarAlwaysDrawHorizontalTrack="true"
+        android:fillViewport="true">
+        <ListView
+            android:id="@+id/gridcandidatelist"
+            android:divider="#000000"
+            android:dividerHeight="2dp"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:columnWidth="75dp"
+            android:stretchMode="columnWidth"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            </ListView>
+    </ScrollView>
+</LinearLayout>
